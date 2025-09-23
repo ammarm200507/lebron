@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #111827;
+  background-color: #f3f4f6;
+  font-family: theme('fontFamily.sans');
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .printable {
+    color: #111827;
+  }
+
+  .printable section {
+    page-break-inside: avoid;
+  }
+
+  .printable footer {
+    page-break-inside: avoid;
+  }
+}
